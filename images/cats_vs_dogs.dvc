@@ -1,6 +1,6 @@
 outs:
-- md5: f894bb66d0dfe129bfb68ebbc8d1704e.dir
-  size: 41149064
-  nfiles: 1800
+- md5: a277519d8a0c27bd81c2233dfe984600.dir
+  size: 64128504
+  nfiles: 2800
   hash: md5
   path: cats_vs_dogs
