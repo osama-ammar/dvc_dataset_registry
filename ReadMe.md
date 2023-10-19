@@ -1,6 +1,6 @@
 ## DVC (Data Version Conrol)
 
-- this repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git to track  and organize  data in ML workflow
+- this repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of data sets traceability and reproducibility when training data-driven models.
 
 ## data
 - cats and dogs images used for  CNN classification model 
@@ -8,8 +8,8 @@
 ## Workflow
 
 * make a local directeroy for your dataset and initialize git and dvc in it
-- `git init`
-- `dvc init `
+ `git init`
+ `dvc init `
 
 * git add dataset.dvc  .gitignore  &&  dvc add dataset/folder
 - `git init`
