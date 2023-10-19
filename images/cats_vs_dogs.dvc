@@ -1,4 +1,4 @@
-md5: 1c2c2ee21872a7d06f8fe15d3be86a96
+md5: a8e2f043a5173849446ce9d3a0fdbef6
 frozen: true
 deps:
 - path: images/cats_vs_dogs
@@ -6,6 +6,7 @@ deps:
     url: https://github.com/osama-ammar/dvc_dataset_registry
     rev_lock: 9af1f973ba2fcae0b52d100d8148a534dce46561
 
+    rev: cats_dogs_v2.0
 outs:
 - md5: a277519d8a0c27bd81c2233dfe984600.dir
   size: 64128504
