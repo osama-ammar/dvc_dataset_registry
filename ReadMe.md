@@ -46,3 +46,4 @@
 ## important dvc commands 
 * dvc remote list   #listing current remote storages
 * dvc push -r <remote_name> #pushing to specefic remote
+* dvc list  #listing files and folders tracked by dvc
