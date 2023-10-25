@@ -1,5 +1,5 @@
 [core]
-    remote = google-drive
+    remote = local
     autostage = true
 ['remote "."']
     url = /mnt/data_partition/data_registry
@@ -7,3 +7,5 @@
     url = /mnt/data_partition/data_registry
 ['remote "google-drive"']
     url = gdrive://dvc-gdrive-test
+['remote "local"']
+    url = D:\Code_store\dvc-local-storage
