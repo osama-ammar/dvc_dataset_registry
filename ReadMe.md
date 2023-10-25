@@ -6,36 +6,38 @@
 #### cats and dogs images used for  CNN classification model 
 
 ## Workflow
+- git init 
+- dvc init 
+- dvc remote add -d  .  D:\datasets\dvc-data-remote
 
-####  make a local directeroy for your dataset and initialize git and dvc in it
- `git init`
- `dvc init `
+## making data to be tracked with dvc 
+- dvc add data
+- git add .dvc/config .dvc/.gitignore
 
-####  git add dataset.dvc  .gitignore  &&  dvc add dataset/folder
-- `dvc remote add -d .  /mnt/data_partition/data_registry`
-- `git add .dvc/config .dvc/.gitignore `
-- `git commit -m "init dvc remote storage`
-- `dvc get https://github.com/iterative/dataset-registry tutorials/versioning/data.zip`
-- `dvc add D:/Code_store/dvc_dataset_registry/images/cats_vs_dogs`
-- `git add D:/Code_store/dvc_dataset_registry/images/cats_vs_dogs.dvc images/.gitignore`
-- `git commit -m "dvc init, add cats vs dogs v1.0, train 1000 imgs, test 800 imgs`
+- git commit -m " adding data to the repo"
+- git tag -a "data_v1.0  "  -m "adding fiirst version of data with 61 files"
+ 
+## pushing data to remote repo
+- dvc push
+- dvc status
 
-####  commit and make a tag for current state of your dataset 
-- `git commit -m "dvc init, add cats vs dogs v1.0, train 1000 imgs, test 800 imgs"`
-- `git tag -a "cats_dogs_v1.0" -m "v1.0 cats vs dogs, train set 1000 imgs, test 800 imgs `
-- `git push --tags`
-- `dvc push`
+## adding more data and run
+- dvc status
 
-####  consider your dataset is changed (added , modified , deleted ) files , then  
-- `git commit -m "adding more images : train 1264 imgs, test 1264 imgs"`
-- `git tag -a "cats_dogs_v2.0" -m "v2.0 cats vs dogs, train set 1264 imgs, test 1264 imgs `
-- `git push --tags`
-- `dvc push`
-####  now for ex ,we have 2 versions of data : 1-cats_dogs_v1.0		2-cats_dogs_v2.0 , if we want to use them ..
-- `dvc import https://github.com/osama-ammar/dvc_dataset_registry  images/cats_vs_dogs`
+## when adding or modifying new data---this sequence should be done
+- dvc add data
+- git add data.dvc .dvc/config
+- git commit -m " adding data to the repo"
+- git tag -a "data_v1.0  "  -m "making a new version of data with more files"
+- git push --tag
+- dvc push
 
-####  to use specefiv version , use dvc update --rev <tag_name> dataset-file.dvc
-- `dvc update --rev cats_dogs_v1.0 cats_vs_dogs.dvc`
+## selecting speceic tag -version- of data
+- git tag	#to know available tags 
+- git describe --tags --abbrev=0	#to know current tag
+- git checkout v1.0 #standing in the tag you want 
+- dvc pull	# pulling this tag 
+
 
 ####  you can also make dvc to a python script that runs automatically when dataset is changed
 

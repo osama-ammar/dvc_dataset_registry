@@ -1,6 +1,9 @@
 [core]
-    remote = my_local_data_registry
+    remote = google-drive
+    autostage = true
 ['remote "."']
     url = /mnt/data_partition/data_registry
 ['remote "my_local_data_registry"']
     url = /mnt/data_partition/data_registry
+['remote "google-drive"']
+    url = gdrive://dvc-gdrive-test
