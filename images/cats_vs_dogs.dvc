@@ -8,8 +8,8 @@ deps:
 
     rev: cats_dogs_v2.0
 outs:
-- md5: a277519d8a0c27bd81c2233dfe984600.dir
-  size: 64128504
-  nfiles: 2800
+- md5: 935493932de198bdba676c4fdc270cee.dir
+  size: 64091628
+  nfiles: 2797
   hash: md5
   path: cats_vs_dogs
