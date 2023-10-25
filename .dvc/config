@@ -8,4 +8,4 @@
 ['remote "google-drive"']
     url = gdrive://dvc-gdrive-test
 ['remote "local"']
-    url = D:\Code_store\dvc-local-storage
+    url = D:/Code_store/dvc-local-storage
