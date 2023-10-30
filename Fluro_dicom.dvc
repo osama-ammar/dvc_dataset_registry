@@ -1,0 +1,6 @@
+outs:
+- md5: 09e88d6d1419c7693c03ce6597bf164d.dir
+  size: 372265432
+  nfiles: 32
+  hash: md5
+  path: Fluro_dicom
