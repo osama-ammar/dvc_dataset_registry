@@ -7,7 +7,7 @@ git add .gitignore data.dvc
 dvc config core.autostage true
 
 git commit -m " adding first version of data "
-git tag -a "mesh&sttl_v1.0  "  -m "adding first version of data with 61 files"
+git tag -a "v1.0  "  -m "adding first version of data with 61 files"
 
 dvc status
 dvc push
