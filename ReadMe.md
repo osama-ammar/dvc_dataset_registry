@@ -1,6 +1,6 @@
 ## DVC (Data Version Conrol)
 
-- this repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of data sets traceability and reproducibility when training data-driven models.
+- This repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of data sets traceability and reproducibility when training data-driven models.
 
 ## data
 * cats and dogs images used for  CNN classification model 
