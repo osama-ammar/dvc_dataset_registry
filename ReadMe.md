@@ -1,10 +1,10 @@
-## DVC (Data Version Conrol)
+## [DVC](https://github.com/iterative/dvc) (Data Version Conrol)
 
 - This repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of data sets traceability and reproducibility when training data-driven models.
-- Batch files in this repo is all you need to setup , select and update dataset.
+- I made many Batch files which include all you need to **setup** , **update** and **select** specefic version of your tracked dataset.
 
 ## data
-* cats and dogs images used for  CNN classification model 
+* cats and dogs images -just for experimentation- used for  CNN classification model 
 
 ## Workflow
 - git init 
