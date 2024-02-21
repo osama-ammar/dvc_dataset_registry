@@ -1,15 +1,18 @@
 ## [DVC](https://github.com/iterative/dvc) (Data Version Conrol)
 
-- This repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of data sets traceability and reproducibility when training data-driven models.
-- I made many Batch files which include all you need to **setup** , **update** and **select** specefic version of your tracked dataset. you can customize them as you need
+- This repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of datasets traceability and reproducibility when training data-driven models.
+- I made many Batch files that contain most repeated actions : **setup** , **update** and **select** specefic version of your tracked dataset. you can customize them as you need
 
 ## data
 * cats and dogs images -just for experimentation- used for  CNN classification model 
 
-## Workflow
-- git init 
-- dvc init 
-- dvc remote add -d  remote-name  D:\folder\dvc-data-remote
+## initialize.bat
+- used to initialize dvc for a dataset -by default we consider that your dataset is in a folder called **data**
+- Actions inside initialize.bat :
+   - iinitialize dvc for your selected location
+   - setting remote storage (it can be in your local device or you can use gdrive , AWS-S3 , Azure ....
+   - adding dataset tou your remote storage and commit changes
+   - making a tag for this version as a first version of data  
 
 ## making data to be tracked with dvc 
 - dvc add data-folder
