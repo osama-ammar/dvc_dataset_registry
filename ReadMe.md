@@ -2,6 +2,8 @@
 
 - This repo is about using and experiemnting DVC (Data Version Conrol) , which is a powerful MLOps tool in that's used on top of git , it is designed to tackle the challenge of datasets traceability and reproducibility when training data-driven models.
 - I made many Batch files that contain most repeated actions : **setup** , **update** and **select** specefic version of your tracked dataset. you can customize them as you need
+- All you need is to take these files (initialize.bat , update.bat , select.bat) and put them beside your dataset folder
+- you should install dvc first `pip install dvc`
 
 ## data
 * cats and dogs images -just for experimentation- used for  CNN classification model 
