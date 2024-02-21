@@ -9,36 +9,27 @@
 ## initialize.bat
 - used to initialize dvc for a dataset -by default we consider that your dataset is in a folder called **data**
 - Actions inside initialize.bat :
-   - iinitialize dvc for your selected location
-   - setting remote storage (it can be in your local device or you can use gdrive , AWS-S3 , Azure ....
+   - initialize dvc for your selected location
+   - setting remote storage (it can be in your local device or/and you can use gdrive , AWS-S3 , Azure ....
    - adding dataset tou your remote storage and commit changes
    - making a tag for this version as a first version of data  
 
-## making data to be tracked with dvc 
-- dvc add data-folder
-- git add .dvc/config .dvc/.gitignore
-
-- git commit -m " adding data to the repo"
-- git tag -a "data_v1.0  "  -m "adding fiirst version of data with 61 files"
- 
-
-## when adding or modifying new data---this sequence should be done
-- dvc status
-- dvc add data-folder
-- git add data.dvc .dvc/config
-- git commit -m " adding data to the repo"
-- git tag -a "data_v1.0  "  -m "making a new version of data with more files"
-- git push --tag
-- dvc push
-
-## selecting speceic tag -version- of data
-- git tag	#to know available tags 
-- git describe --tags --abbrev=0	#to know current tag
-- git checkout v1.0 #standing in the tag you want 
-- dvc pull	# pulling this tag 
-
-
-####  you can also make dvc to a python script that runs automatically when dataset is changed
+## update.bat
+- when you made any changes to you dataset (modify , delete , add) we run this batch file
+- Actions inside update.bat :
+   - check for any changes
+   - commit changes
+   - it asks you whether you want to just commit or make a tage for these changes and the name of this tag
+   - push updates to remote storage
+     
+## select.bat
+- it just set or switch you to specefic version of data you want
+- Actions inside update.bat :
+   - tells you where do you stand now
+   - show current tags 
+   - asks you to enter the tag you want to switch
+   - move to selected tag
+     
 
 ## adding google-drive folder as a remote storage
 * make a project in google workspace
@@ -51,3 +42,12 @@
 * dvc remote list   #listing current remote storages
 * dvc push -r <remote_name> #pushing to specefic remote
 * dvc list  #listing files and folders tracked by dvc
+
+####  you can also make dvc to a python script that runs automatically when dataset is changed
+
+### TODO
+[ ] automating data pipeline (pre/post processing )
+[ ] automating AWS-S3 and gdrive setup 
+[ ] integrate with CML
+[ ] integrate with Dagshub
+  
