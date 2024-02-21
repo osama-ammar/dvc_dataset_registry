@@ -10,6 +10,7 @@
 
 ## initialize.bat
 - used to initialize dvc for a dataset -by default we consider that your dataset is in a folder called **data**
+- you can also setup gdrive and aws-s3 ... just follow and modifiy instructions in this file
 - Actions inside initialize.bat :
    - initialize dvc for your selected location
    - setting remote storage (it can be in your local device or/and you can use gdrive , AWS-S3 , Azure ....
