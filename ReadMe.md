@@ -46,8 +46,8 @@
 ####  you can also make dvc to a python script that runs automatically when dataset is changed
 
 ### TODO
-[ ] automating data pipeline (pre/post processing )
-[ ] automating AWS-S3 and gdrive setup 
-[ ] integrate with CML
-[ ] integrate with Dagshub
+- [ ] automating data pipeline (pre/post processing )
+- [ ] automating AWS-S3 and gdrive setup 
+- [ ] integrate with CML
+- [ ] integrate with Dagshub
   
